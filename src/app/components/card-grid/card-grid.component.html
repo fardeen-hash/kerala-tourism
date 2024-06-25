@@ -1,0 +1,25 @@
+<div class="card-grid">
+    @for(card of cards; track card.id){
+
+
+      <a [routerLink]="['/district', card.Name]">
+
+    <div class="card" >
+      <img [src]="card.Images[0]" alt="Card image" class="card-img">
+      <div class="card-body">
+        <div class="card-header">
+          <span class="card-rating">{{ card.Name  }} </span>
+          <h3 class="card-title">{{ card.Description }}</h3>
+          <!-- <p class="card-price">${{ card.price }} / Per Person</p> -->
+        </div>
+        <!-- <div class="card-footer"> -->
+          <!-- <span class="card-duration">{{ card.duration }} Days</span> -->
+          <!-- <span class="card-location">{{ card.location }}</span> -->
+        <!-- </div> -->
+      </div>
+    </div>
+
+    </a>
+            }
+  </div>
+  

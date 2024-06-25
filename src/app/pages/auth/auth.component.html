@@ -1,0 +1,12 @@
+<div class="auth-container">
+    <div class="toggle-buttons">
+      <button (click)="showLogin()">Login</button>
+      <button (click)="showSignup()">Signup</button>
+    </div>
+  
+    <div class="auth-content">
+      <app-login *ngIf="isLogin"></app-login>
+      <app-signup *ngIf="!isLogin"></app-signup>
+    </div>
+  </div>
+  
